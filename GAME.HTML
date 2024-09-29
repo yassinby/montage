@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات المونتاج - ياسين</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .services, .about, .pricing, .contact {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .pricing .price {
+            font-size: 24px;
+            color: #27ae60;
+        }
+
+        .subscribe-btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #219150;
+        }
+
+        .contact {
+            display: none;
+            text-align: center;
+        }
+
+        .show-contact {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ياسين - محترف المونتاج</h1>
+        <p>ابدأ رحلتك الإبداعية معنا، واستفد من خصم 20% لأول اشتراك!</p>
+    </header>
+
+    <div class="container">
+        <!-- قسم "من أنا" -->
+        <div class="about">
+            <h2>من أنا</h2>
+            <p>أنا ياسين، محترف في مجال المونتاج وصناعة الفيديوهات الإبداعية. أعمل على تحويل الأفكار إلى قصص بصرية مبهرة، وأقدم خدمات مونتاج تناسب احتياجاتك سواء كانت للتسويق أو الإعلانات أو أي مشروع إبداعي.</p>
+        </div>
+
+        <!-- قسم الخدمات -->
+        <div class="services">
+            <h2>الخدمات التي أقدمها</h2>
+            <p>أنا متخصص في تقديم خدمات المونتاج التالية:</p>
+            <ul>
+                <li>مونتاج الفيديوهات الاحترافية</li>
+                <li>إضافة المؤثرات البصرية والصوتية</li>
+                <li>تصميم الفيديوهات التسويقية والإعلانية</li>
+                <li>إنتاج محتوى لوسائل التواصل الاجتماعي</li>
+            </ul>
+        </div>
+
+        <!-- قسم الأسعار والخصومات -->
+        <div class="pricing">
+            <h2>الأسعار</h2>
+            <p>احصل على خدمات مونتاج احترافية بسعر يبدأ من <span class="price">200 دولار شهريًا</span>.</p>
+            <p><strong>خصم 20% لأول اشتراك!</strong></p>
+            <a href="#contact" class="subscribe-btn" onclick="showContact()">سجل الآن واستفد من الخصم</a>
+        </div>
+
+        <!-- قسم التواصل -->
+        <div id="contact" class="contact">
+            <h2>للتواصل</h2>
+            <p>واتساب: <a href="https://wa.me/0569013962" target="_blank">0569013962</a></p>
+            <p>البريد الإلكتروني: <a href="mailto:yassineamen56@gmail.com">yassineamen56@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showContact() {
+            document.getElementById('contact').classList.add('show-contact');
+        }
+    </script>
+
+</body>
+</html>
